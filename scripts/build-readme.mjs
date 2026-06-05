@@ -44,17 +44,21 @@ function renderReadme(project, images) {
 
 一个用于展示、学习和复用中华传统色的开放图片项目。当前仓库收录 ${project.count} 张传统色色卡图片，每张色卡包含色名、HEX、RGB、CMYK、配色推荐和气质关键词；README 使用轻量缩略图完整展示，点击任意缩略图可打开高清 PNG 原图。
 
-## 在线访问
-
-- [GitHub Pages 在线浏览](https://nevertoday.github.io/zhongguo-traditional-colors/)
-- [完整图片包 Release 下载](https://github.com/nevertoday/zhongguo-traditional-colors/releases/tag/v0.1.0)
-
-## 下载
+## 快速入口
 
 - [下载全部高清图片 ZIP](https://github.com/nevertoday/zhongguo-traditional-colors/releases/latest/download/${project.archiveName})
-- 单张高清图：点击下方任意缩略图即可打开对应 PNG。
+- [在线浏览色卡](https://nevertoday.github.io/zhongguo-traditional-colors/)
+- [完整图片包 Release 下载](https://github.com/nevertoday/zhongguo-traditional-colors/releases/tag/v0.1.0)
+- [作者 X 主页](https://x.com/xiaoxiaodong01)
 
-> 原图约 ${totalMb}MB，ZIP 文件作为 GitHub Release 附件提供，不直接提交进仓库。
+> 原图约 ${totalMb}MB，ZIP 文件作为 GitHub Release 附件提供，不直接提交进仓库。单张高清图可点击下方任意缩略图打开。
+
+## 预览
+
+<!-- gallery:start -->
+${galleryRows(images)}
+
+<!-- gallery:end -->
 
 ## 项目定位
 
@@ -104,13 +108,6 @@ npm run readme
 \`\`\`
 
 这会重新生成 \`assets/data/images.js\` 和 README 预览图廊。新增图片时请同时补充对应 \`thumbnails/\` 缩略图。
-
-## 预览
-
-<!-- gallery:start -->
-${galleryRows(images)}
-
-<!-- gallery:end -->
 
 ## 支持作者
 
